@@ -1,0 +1,443 @@
+/* ================================= */
+/* PRODUCT CARD */
+/* ================================= */
+
+.shop-card {
+
+    height: 100%;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #e8edf3;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.07);
+
+    transition: all 0.3s ease;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.shop-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.13);
+
+}
+
+
+/* ================================= */
+/* IMAGE */
+/* ================================= */
+
+.card-image-wrapper {
+
+    height: 245px;
+
+    background: #f8fafc;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    overflow: hidden;
+}
+
+
+.card-product-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+.shop-card:hover .card-product-image {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ================================= */
+/* DISCOUNT */
+/* ================================= */
+
+.card-discount {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    background: #ef4444;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* ================================= */
+/* STOCK */
+/* ================================= */
+
+.card-stock {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ================================= */
+/* BODY */
+/* ================================= */
+
+.shop-card-body {
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+/* ================================= */
+/* CATEGORY */
+/* ================================= */
+
+.card-category {
+
+    color: #f59e0b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 7px;
+}
+
+
+/* ================================= */
+/* TITLE */
+/* ================================= */
+
+.card-title {
+
+    color: #111827;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    margin-bottom: 9px;
+
+    min-height: 46px;
+}
+
+
+/* ================================= */
+/* DESCRIPTION */
+/* ================================= */
+
+.card-description {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-bottom: 4px;
+
+    min-height: 38px;
+}
+
+
+/* ================================= */
+/* READ MORE */
+/* ================================= */
+
+.read-more-btn {
+
+    width: fit-content;
+
+    border: none;
+
+    background: transparent;
+
+    color: #f59e0b;
+
+    padding: 0;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+
+.read-more-btn:hover {
+
+    color: #d97706;
+
+    text-decoration: underline;
+}
+
+
+/* ================================= */
+/* RATING */
+/* ================================= */
+
+.card-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: auto;
+
+    margin-bottom: 10px;
+}
+
+
+.stars {
+
+    display: flex;
+
+    gap: 2px;
+}
+
+
+.star {
+
+    color: #d1d5db;
+
+    font-size: 12px;
+}
+
+
+.star.active {
+
+    color: #f59e0b;
+}
+
+
+.card-rating span {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ================================= */
+/* PRICE */
+/* ================================= */
+
+.card-price-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-price {
+
+    color: #111827;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+.card-old-price {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    text-decoration: line-through;
+}
+
+
+/* ================================= */
+/* BUTTONS */
+/* ================================= */
+
+.card-buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+}
+
+
+.card-cart-btn {
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #f59e0b;
+
+    color: white;
+
+    min-height: 42px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.card-cart-btn:hover {
+
+    background: #d97706;
+
+    transform: translateY(-2px);
+}
+
+
+.card-details-btn {
+
+    text-decoration: none;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 9px;
+
+    color: #334155;
+
+    min-height: 42px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    transition: 0.3s;
+}
+
+
+.card-details-btn:hover {
+
+    background: #111827;
+
+    border-color: #111827;
+
+    color: white;
+}
+
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 576px) {
+
+    .card-image-wrapper {
+
+        height: 220px;
+
+    }
+
+
+    .shop-card-body {
+
+        padding: 16px;
+
+    }
+
+
+    .card-buttons {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

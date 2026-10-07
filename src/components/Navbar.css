@@ -1,0 +1,128 @@
+/* ============================= */
+/* SHOPZONE NAVBAR */
+/* ============================= */
+
+.shopzone-navbar {
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #1e293b
+  );
+
+  padding: 15px 0;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Logo */
+
+.shopzone-logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: white !important;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.shopzone-logo span:last-child {
+  color: #f59e0b;
+}
+
+.logo-icon {
+  margin-right: 7px;
+}
+
+
+/* Navbar Links */
+
+.shopzone-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: 0.3s;
+  position: relative;
+}
+
+
+.shopzone-link:hover {
+  color: #f59e0b !important;
+  transform: translateY(-2px);
+}
+
+
+/* User */
+
+.shopzone-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+
+  font-weight: 500;
+}
+
+
+.user-icon {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+
+  background: #f59e0b;
+
+  color: #111827;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Logout */
+
+.shopzone-logout {
+  border: none;
+
+  padding: 9px 18px;
+
+  border-radius: 25px;
+
+  background: #ef4444;
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+.shopzone-logout:hover {
+  background: #dc2626;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+  .shopzone-user {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .shopzone-link {
+    margin: 8px 0;
+  }
+
+}

@@ -1,0 +1,453 @@
+/* ========================= */
+/* SHOPZONE HERO SECTION */
+/* ========================= */
+
+.shopzone-hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #fff7ed 50%,
+            #fef3c7 100%
+        );
+
+    padding: 70px 0;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* ========================= */
+/* HERO CONTENT */
+/* ========================= */
+
+.hero-content {
+    padding: 20px 0;
+}
+
+
+.hero-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: #fff;
+
+    color: #f59e0b;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 {
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 span {
+    color: #f59e0b;
+}
+
+
+.hero-content > p {
+    max-width: 550px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================= */
+/* SHOP NOW BUTTON */
+/* ========================= */
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+    background: #f59e0b;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.hero-features {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+
+.hero-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #f59e0b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.hero-feature h6 {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #111827;
+}
+
+
+.hero-feature p {
+    margin: 2px 0 0;
+
+    font-size: 11px;
+
+    color: #64748b;
+}
+
+
+/* ========================= */
+/* HERO IMAGE AREA */
+/* ========================= */
+
+.hero-image-area {
+    min-height: 420px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Background Circle */
+
+.hero-circle {
+    width: 350px;
+
+    height: 350px;
+
+    background: #f59e0b;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    opacity: 0.15;
+}
+
+
+/* Main Shopping Icon */
+
+.hero-main-image {
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 120px;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Floating Cards */
+
+.hero-card {
+    width: 70px;
+
+    height: 70px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    position: absolute;
+
+    z-index: 3;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+
+    animation: floating 3s ease-in-out infinite;
+}
+
+
+.card-one {
+    top: 40px;
+    left: 70px;
+}
+
+
+.card-two {
+    bottom: 50px;
+    left: 80px;
+
+    animation-delay: 0.8s;
+}
+
+
+.card-three {
+    top: 90px;
+    right: 50px;
+
+    animation-delay: 1.3s;
+}
+
+
+/* ========================= */
+/* DISCOUNT BADGE */
+/* ========================= */
+
+.discount-badge {
+    width: 85px;
+
+    height: 85px;
+
+    border-radius: 50%;
+
+    background: #ef4444;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: absolute;
+
+    right: 30px;
+
+    bottom: 45px;
+
+    z-index: 4;
+
+    transform: rotate(10deg);
+
+    box-shadow:
+        0 10px 25px rgba(239, 68, 68, 0.3);
+}
+
+
+.discount-badge strong {
+    font-size: 24px;
+
+    line-height: 1;
+}
+
+
+.discount-badge span {
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ========================= */
+/* FLOATING ANIMATION */
+/* ========================= */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 991px) {
+
+    .shopzone-hero {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-image-area {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .hero-features {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .hero-main-image {
+        width: 210px;
+        height: 210px;
+
+        font-size: 90px;
+    }
+
+    .hero-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .card-one {
+        left: 10px;
+    }
+
+    .card-two {
+        left: 20px;
+    }
+
+    .card-three {
+        right: 10px;
+    }
+
+    .discount-badge {
+        right: 0;
+    }
+
+}
